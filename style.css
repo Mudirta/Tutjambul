@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Universed.jpg);
+    background-size: cover;
+    background-attachment: unset;
+    background-position: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+     
+}
+.earth{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: url(imagesdunia.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgba(0,0,0,1), 0 0 50px #4069ff;
+    animation: animateEarth 20s linear infinite;
+    
+}
+.note{
+    display: flex;
+    margin-bottom: 450px; 
+    position: absolute;
+    margin-left:190px;
+    color: rgb(191, 214, 203);
+}
+.gambar{
+    
+       
+    margin-left: 100px;
+    
+   
+    }
+.bulan{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+        background: url(matahari1.png);
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: repeat-x;
+        border-radius: 50%;
+        box-shadow: inset 0 0 20px rgb(240, 225, 14), 0 0 50px #879b18e0;
+        animation: animateEarth 70s linear infinite;
+        }
+
+    .matahari{
+        position: absolute;
+            top: 65%;
+            left: 5;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: 250px;
+            background: url(imagesdunia.jpg);
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: repeat-x;
+            border-radius: 50%;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px #4069ff;
+            animation: animateEarth 30s linear infinite;
+    }
+@keyframes animateEarth {
+    0%{
+        background-position: 0 0;
+    }
+        100% {
+            background-position: -328px 0;
+        }
+}
